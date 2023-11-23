@@ -1,0 +1,49 @@
+.upcoming-birthday {
+  grid-area: upcoming-birthday;
+  height: 35%;
+  padding: 5rem 0 5rem 5rem;
+  border-radius: var(--border-radius);
+  background: url("../Assets/upcoming-bg.svg") right no-repeat,
+    linear-gradient(101deg, #f9abe1 46.87%, #f8d5b7 100.42%);
+  background-size: contain;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas:
+    "tag tag"
+    "content date";
+}
+.upcoming-birthday-tag {
+  grid-area: tag;
+  text-transform: uppercase;
+  font-family: var(--ff-helvetica);
+  font-weight: 400;
+  letter-spacing: var(--letter-spacing);
+  color: var(--color-white);
+}
+.upcoming-birthday-content {
+  grid-area: content;
+  justify-self: start;
+  align-self: end;
+  color: var(--color-primary);
+  font-weight: bolder;
+}
+.upcoming-birthday-content--name {
+  font-size: 3.5rem;
+}
+.upcoming-birthday-content--days {
+  font-size: 2rem;
+  color: none;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 1px var(--color-primary);
+}
+.upcoming-birthday-date {
+  font-size: 2rem;
+  grid-area: date;
+  justify-self: end;
+  align-self: end;
+  background-color: var(--color-upcoming-birthday--date);
+  color: var(--color-white);
+  padding: 1rem 2.5rem;
+  border-radius: var(--border-radius) 0 0 var(--border-radius);
+}

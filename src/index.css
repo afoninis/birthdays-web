@@ -1,0 +1,41 @@
+:root {
+  --border-radius: 1rem;
+  --letter-spacing: 0.8rem;
+  --ff-helvetica: "Helvetica, sans-serif";
+
+  /* Colors */
+  --color-primary: #221a3b;
+  --color-general-bg: #221a3c;
+  --color-white: #ffffff;
+
+  /* Upcoming Birthday */
+  --color-upcoming-birthday--date: #382e59;
+
+  /* Birthday List */
+  --color-birthday-list-bg: #1a152c;
+  --color-birthday-list-item-bg: #2a2145;
+  --color-birthday-list--right-text: #f8cebd;
+  --color-birthday-list--right-light: #f8cbc1;
+  --color-birthday-list--right-dark: #241c3a;
+  --color-birthday-list--primary: #9287b4;
+  --color-birthday-list--title: #f5e7e4;
+  --color-birthday-list--days: #f8d3b8;
+
+  --color-birthday-list--level-close: #f8d3b8;
+  --color-birthday-list--level-soon: #f8bece;
+  --color-birthday-list--level-safe: #f9adde;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.6rem;
+}
