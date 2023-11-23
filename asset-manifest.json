@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/birthdays-web/static/css/main.4c7ecdb0.css",
+    "main.js": "/birthdays-web/static/js/main.4d454545.js",
+    "static/media/upcoming-bg.svg": "/birthdays-web/static/media/upcoming-bg.afb03239b0386d9a6074.svg",
+    "index.html": "/birthdays-web/index.html",
+    "static/media/edit.svg": "/birthdays-web/static/media/edit.17fd597bffd7892767edd1bdf13cb553.svg",
+    "static/media/details.svg": "/birthdays-web/static/media/details.622e19bb5b32d9706e7a1fd4769bfb1d.svg",
+    "static/media/menu.svg": "/birthdays-web/static/media/menu.cf92edca88ff6c1f2267fe724069a33f.svg",
+    "main.4c7ecdb0.css.map": "/birthdays-web/static/css/main.4c7ecdb0.css.map",
+    "main.4d454545.js.map": "/birthdays-web/static/js/main.4d454545.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4c7ecdb0.css",
+    "static/js/main.4d454545.js"
+  ]
+}
