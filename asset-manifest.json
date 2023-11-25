@@ -1,17 +1,26 @@
 {
   "files": {
-    "main.css": "/birthdays-web/static/css/main.4c7ecdb0.css",
-    "main.js": "/birthdays-web/static/js/main.4d454545.js",
+    "main.css": "/birthdays-web/static/css/main.d0446269.css",
+    "main.js": "/birthdays-web/static/js/main.17063211.js",
+    "static/media/helvetica_oblique.otf": "/birthdays-web/static/media/helvetica_oblique.a1823bb006b6c436c523.otf",
+    "static/media/helvetica_boldoblique.otf": "/birthdays-web/static/media/helvetica_boldoblique.082aabcca193fbd19bc4.otf",
+    "static/media/helvetica_bold.otf": "/birthdays-web/static/media/helvetica_bold.899889c95eb3c6b47ce3.otf",
+    "static/media/helvetica_regular.otf": "/birthdays-web/static/media/helvetica_regular.da7db66db5a8e54a8308.otf",
+    "static/media/helvetica_lightoblique.otf": "/birthdays-web/static/media/helvetica_lightoblique.eef71bed5fd061ffad76.otf",
+    "static/media/helvetica_light.otf": "/birthdays-web/static/media/helvetica_light.677f82c0f6e45b4eeaf2.otf",
+    "static/media/ofont_ru_Gill_Sans.ttf": "/birthdays-web/static/media/ofont_ru_Gill_Sans.869496bae8bdf962b404.ttf",
+    "static/media/helvetica_cyr_oblique.ttf": "/birthdays-web/static/media/helvetica_cyr_oblique.e674236c5404f341ac21.ttf",
+    "static/media/helvetica_cyr_boldoblique.ttf": "/birthdays-web/static/media/helvetica_cyr_boldoblique.b38d72d608526b0b0d72.ttf",
     "static/media/upcoming-bg.svg": "/birthdays-web/static/media/upcoming-bg.afb03239b0386d9a6074.svg",
     "index.html": "/birthdays-web/index.html",
     "static/media/edit.svg": "/birthdays-web/static/media/edit.17fd597bffd7892767edd1bdf13cb553.svg",
     "static/media/details.svg": "/birthdays-web/static/media/details.622e19bb5b32d9706e7a1fd4769bfb1d.svg",
     "static/media/menu.svg": "/birthdays-web/static/media/menu.cf92edca88ff6c1f2267fe724069a33f.svg",
-    "main.4c7ecdb0.css.map": "/birthdays-web/static/css/main.4c7ecdb0.css.map",
-    "main.4d454545.js.map": "/birthdays-web/static/js/main.4d454545.js.map"
+    "main.d0446269.css.map": "/birthdays-web/static/css/main.d0446269.css.map",
+    "main.17063211.js.map": "/birthdays-web/static/js/main.17063211.js.map"
   },
   "entrypoints": [
-    "static/css/main.4c7ecdb0.css",
-    "static/js/main.4d454545.js"
+    "static/css/main.d0446269.css",
+    "static/js/main.17063211.js"
   ]
 }
