@@ -1,3 +1,40 @@
+@font-face {
+  font-family: "Helvetica_Bold";
+  src: url("./Assets/Fonts/helvetica_bold.otf");
+}
+@font-face {
+  font-family: "Helvetica_Boldoblique";
+  src: url("./Assets/Fonts/helvetica_boldoblique.otf");
+}
+@font-face {
+  font-family: "Helvetica_Cyr_Boldoblique";
+  src: url("./Assets/Fonts/helvetica_cyr_boldoblique.ttf");
+}
+@font-face {
+  font-family: "Helvetica_Cyr_Oblique";
+  src: url("./Assets/Fonts/helvetica_cyr_oblique.ttf");
+}
+@font-face {
+  font-family: "Helvetica_Light";
+  src: url("./Assets/Fonts/helvetica_light.otf");
+}
+@font-face {
+  font-family: "Helvetica_LightOblique";
+  src: url("./Assets/Fonts/helvetica_lightoblique.otf");
+}
+@font-face {
+  font-family: "Helvetica_Oblique";
+  src: url("./Assets/Fonts/helvetica_oblique.otf");
+}
+@font-face {
+  font-family: "Helvetica_Regular";
+  src: url("./Assets/Fonts/helvetica_regular.otf");
+}
+@font-face {
+  font-family: "Gill_Sans";
+  src: url("./Assets/Fonts/ofont_ru_Gill_Sans.ttf");
+}
+
 :root {
   --border-radius: 1rem;
   --letter-spacing: 0.8rem;
@@ -17,6 +54,7 @@
   --color-birthday-list--right-text: #f8cebd;
   --color-birthday-list--right-light: #f8cbc1;
   --color-birthday-list--right-dark: #241c3a;
+  --color-birthday-list--right-progress: #927bd3;
   --color-birthday-list--primary: #9287b4;
   --color-birthday-list--title: #f5e7e4;
   --color-birthday-list--days: #f8d3b8;

@@ -1,6 +1,6 @@
 .birthdays-list {
   grid-area: birthdays-list;
-  padding: 2rem 1rem 1rem;
+  padding: 0 1rem 1rem;
   background-color: var(--color-birthday-list-bg);
   border-radius: var(--border-radius);
   min-height: 40vh;
@@ -12,29 +12,45 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 1rem 0;
+  height: 8rem;
 }
 .birthdays-list-header--title {
   color: var(--color-birthday-list--primary);
   letter-spacing: var(--letter-spacing);
   text-transform: uppercase;
-  font-family: var(--ff-helvetica);
+  font-family: "Helvetica_LightOblique";
   padding-left: 4rem;
 }
 .birthdays-list-header--controls {
+  display: flex;
+}
+.birthdays-list-header--controls-icon {
+  width: 5rem;
+  height: 6rem;
+  display: grid;
+  justify-items: center;
+  align-items: center;
 }
 .birthdays-list-header--image {
+  height: 4rem;
+  transition: all ease-in-out 0.3s;
+}
+.birthdays-list-header--image:hover {
   height: 5rem;
 }
 .birthdays-list-content {
   width: 100%;
-  margin-top: 1rem;
 }
 .birthdays-list-content--item {
   display: grid;
   grid-template-columns: 1fr auto;
-  margin-top: 1rem;
   background-color: var(--color-birthday-list-item-bg);
   border-radius: var(--border-radius);
+  height: 8.5rem;
+}
+.birthdays-list-content--item:not(:first-child) {
+  margin-top: 1rem;
 }
 .birthdays-list-content--left {
   display: grid;
@@ -46,27 +62,55 @@
   color: var(--color-birthday-list--title);
 }
 .birthdays-list-content--name {
+  font-family: "Helvetica_Bold";
 }
 .birthdays-list-content--date {
+  font-family: "Helvetica_Regular";
   opacity: 0.5;
 }
 .birthdays-list-content--icon {
 }
 .birthdays-list-content--image {
   height: 3rem;
+  transition: all ease-in-out 0.3s;
+}
+.birthdays-list-content--image:hover {
+  height: 4rem;
 }
 .birthdays-list-content--right {
+  position: relative;
   width: 15rem;
+  height: 100%;
   display: grid;
   align-items: center;
   justify-items: center;
-  background-color: var(--color-birthday-list--right-dark);
+  background-color: var(--color-birthday-list--right-progress);
   border-radius: var(--border-radius);
-  stroke: 0.7rem solid var(--color-birthday-list-bg);
+  border-left: 0.5rem solid var(--color-birthday-list-bg);
 }
-.birthdays-list-content--days.light {
-  color: var(--color-birthday-list--right-light);
+.birthdays-list-content--progress {
+  position: absolute;
+  width: attr(data-progress);
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: var(--color-birthday-list--level-close);
+  border-radius: var(--border-radius);
+  z-index: 1;
 }
-.birthdays-list-content--days.dark {
+.birthdays-list-content--progress.close {
+  background-color: var(--color-birthday-list--level-close);
+}
+.birthdays-list-content--progress.soon {
+  background-color: var(--color-birthday-list--level-soon);
+}
+.birthdays-list-content--progress.safe {
+  background-color: var(--color-birthday-list--level-safe);
+}
+.birthdays-list-content--days {
+  font-size: 2.5rem;
+  font-family: "Gill_Sans";
+  z-index: 2;
+  position: relative;
   color: var(--color-birthday-list--right-dark);
 }

@@ -3,7 +3,7 @@
   height: 35%;
   padding: 5rem 0 5rem 5rem;
   border-radius: var(--border-radius);
-  background: url("../Assets/upcoming-bg.svg") right no-repeat,
+  background: url("../Assets/Images/upcoming-bg.svg") right no-repeat,
     linear-gradient(101deg, #f9abe1 46.87%, #f8d5b7 100.42%);
   background-size: contain;
   display: grid;
@@ -16,8 +16,7 @@
 .upcoming-birthday-tag {
   grid-area: tag;
   text-transform: uppercase;
-  font-family: var(--ff-helvetica);
-  font-weight: 400;
+  font-family: "Helvetica_Lightoblique";
   letter-spacing: var(--letter-spacing);
   color: var(--color-white);
 }
@@ -26,7 +25,7 @@
   justify-self: start;
   align-self: end;
   color: var(--color-primary);
-  font-weight: bolder;
+  font-family: "Helvetica_Bold";
 }
 .upcoming-birthday-content--name {
   font-size: 3.5rem;
@@ -39,6 +38,7 @@
 }
 .upcoming-birthday-date {
   font-size: 2rem;
+  font-family: "Gill_Sans";
   grid-area: date;
   justify-self: end;
   align-self: end;
