@@ -1,19 +1,23 @@
 export const birthdays = [
   {
     id: 0,
-    name: "Olivia",
-    surname: "White",
-    username: "wellwellwell",
+    name: "Саня",
+    surname: "Дуло",
+    username: "Генерал Токсин",
     day: 28,
     month: 10,
+    favorite: true,
+    note: "noob",
   },
   {
     id: 1,
     name: "Emma",
     surname: "White",
     username: "wellwellwell",
-    day: 24,
-    month: 10,
+    day: 10,
+    month: 11,
+    favorite: false,
+    note: "your note",
   },
   {
     id: 2,
@@ -21,23 +25,29 @@ export const birthdays = [
     surname: "White",
     username: "wellwellwell",
     day: 28,
-    month: 12,
+    month: 10,
+    favorite: true,
+    note: "your note",
   },
   {
     id: 3,
     name: "Amelia",
     surname: "White",
     username: "wellwellwell",
-    day: 28,
-    month: 11,
+    day: 29,
+    month: 10,
+    favorite: false,
+    note: "your note",
   },
   {
     id: 4,
     name: "Sophia",
     surname: "White",
     username: "wellwellwell",
-    day: 28,
-    month: 11,
+    day: 30,
+    month: 10,
+    favorite: false,
+    note: "your note",
   },
   {
     id: 5,
@@ -52,8 +62,10 @@ export const birthdays = [
     name: "Ava",
     surname: "White",
     username: "wellwellwell",
-    day: 28,
-    month: 11,
+    day: 25,
+    month: 10,
+    favorite: false,
+    note: "your note",
   },
   {
     id: 7,
@@ -62,6 +74,8 @@ export const birthdays = [
     username: "wellwellwell",
     day: 28,
     month: 11,
+    favorite: false,
+    note: "your note",
   },
   {
     id: 8,
@@ -70,6 +84,8 @@ export const birthdays = [
     username: "wellwellwell",
     day: 28,
     month: 11,
+    favorite: false,
+    note: "your note",
   },
   {
     id: 9,
@@ -78,6 +94,8 @@ export const birthdays = [
     username: "wellwellwell",
     day: 28,
     month: 11,
+    favorite: false,
+    note: "your note",
   },
   {
     id: 10,
@@ -86,6 +104,8 @@ export const birthdays = [
     username: "wellwellwell",
     day: 28,
     month: 11,
+    favorite: false,
+    note: "your note",
   },
   {
     id: 11,
@@ -94,6 +114,8 @@ export const birthdays = [
     username: "wellwellwell",
     day: 28,
     month: 11,
+    favorite: false,
+    note: "your note",
   },
   {
     id: 12,
@@ -102,6 +124,8 @@ export const birthdays = [
     username: "wellwellwell",
     day: 28,
     month: 11,
+    favorite: false,
+    note: "your note",
   },
   {
     id: 13,
@@ -110,6 +134,8 @@ export const birthdays = [
     username: "wellwellwell",
     day: 28,
     month: 11,
+    favorite: false,
+    note: "your note",
   },
   {
     id: 14,
@@ -118,6 +144,8 @@ export const birthdays = [
     username: "wellwellwell",
     day: 28,
     month: 11,
+    favorite: false,
+    note: "your note",
   },
   {
     id: 15,
@@ -126,6 +154,8 @@ export const birthdays = [
     username: "wellwellwell",
     day: 28,
     month: 11,
+    favorite: false,
+    note: "your note",
   },
   {
     id: 16,
@@ -134,6 +164,8 @@ export const birthdays = [
     username: "wellwellwell",
     day: 28,
     month: 11,
+    favorite: false,
+    note: "your note",
   },
   {
     id: 17,
@@ -142,6 +174,8 @@ export const birthdays = [
     username: "wellwellwell",
     day: 28,
     month: 11,
+    favorite: false,
+    note: "your note",
   },
   {
     id: 18,
@@ -150,6 +184,8 @@ export const birthdays = [
     username: "wellwellwell",
     day: 28,
     month: 11,
+    favorite: false,
+    note: "your note",
   },
   {
     id: 19,
@@ -158,6 +194,8 @@ export const birthdays = [
     username: "wellwellwell",
     day: 28,
     month: 11,
+    favorite: false,
+    note: "your note",
   },
   {
     id: 20,
@@ -166,6 +204,8 @@ export const birthdays = [
     username: "wellwellwell",
     day: 28,
     month: 11,
+    favorite: false,
+    note: "your note",
   },
   {
     id: 21,
@@ -174,6 +214,8 @@ export const birthdays = [
     username: "wellwellwell",
     day: 28,
     month: 11,
+    favorite: false,
+    note: "your note",
   },
   {
     id: 22,
@@ -182,6 +224,8 @@ export const birthdays = [
     username: "wellwellwell",
     day: 28,
     month: 11,
+    favorite: false,
+    note: "your note",
   },
   {
     id: 23,
@@ -190,6 +234,8 @@ export const birthdays = [
     username: "wellwellwell",
     day: 28,
     month: 11,
+    favorite: false,
+    note: "your note",
   },
   {
     id: 24,
@@ -198,6 +244,8 @@ export const birthdays = [
     username: "wellwellwell",
     day: 28,
     month: 11,
+    favorite: false,
+    note: "your note",
   },
   {
     id: 25,
@@ -206,6 +254,8 @@ export const birthdays = [
     username: "wellwellwell",
     day: 28,
     month: 11,
+    favorite: false,
+    note: "your note",
   },
   {
     id: 26,
@@ -214,6 +264,8 @@ export const birthdays = [
     username: "wellwellwell",
     day: 28,
     month: 11,
+    favorite: false,
+    note: "your note",
   },
   {
     id: 27,
@@ -222,6 +274,8 @@ export const birthdays = [
     username: "wellwellwell",
     day: 28,
     month: 11,
+    favorite: false,
+    note: "your note",
   },
   {
     id: 28,
@@ -230,6 +284,8 @@ export const birthdays = [
     username: "wellwellwell",
     day: 28,
     month: 11,
+    favorite: false,
+    note: "your note",
   },
   {
     id: 29,
@@ -238,6 +294,8 @@ export const birthdays = [
     username: "wellwellwell",
     day: 28,
     month: 11,
+    favorite: false,
+    note: "your note",
   },
   {
     id: 30,
@@ -246,6 +304,8 @@ export const birthdays = [
     username: "wellwellwell",
     day: 28,
     month: 11,
+    favorite: false,
+    note: "your note",
   },
   {
     id: 31,
@@ -254,6 +314,8 @@ export const birthdays = [
     username: "wellwellwell",
     day: 28,
     month: 11,
+    favorite: false,
+    note: "your note",
   },
   {
     id: 32,
@@ -262,6 +324,8 @@ export const birthdays = [
     username: "wellwellwell",
     day: 28,
     month: 11,
+    favorite: false,
+    note: "your note",
   },
   {
     id: 33,
@@ -270,6 +334,8 @@ export const birthdays = [
     username: "wellwellwell",
     day: 28,
     month: 11,
+    favorite: false,
+    note: "your note",
   },
   {
     id: 34,
@@ -278,6 +344,8 @@ export const birthdays = [
     username: "wellwellwell",
     day: 28,
     month: 11,
+    favorite: false,
+    note: "your note",
   },
   {
     id: 35,
@@ -286,6 +354,8 @@ export const birthdays = [
     username: "wellwellwell",
     day: 28,
     month: 11,
+    favorite: false,
+    note: "your note",
   },
   {
     id: 36,
@@ -294,6 +364,8 @@ export const birthdays = [
     username: "wellwellwell",
     day: 28,
     month: 11,
+    favorite: false,
+    note: "your note",
   },
   {
     id: 37,
@@ -302,6 +374,8 @@ export const birthdays = [
     username: "wellwellwell",
     day: 28,
     month: 11,
+    favorite: false,
+    note: "your note",
   },
   {
     id: 38,
@@ -310,6 +384,8 @@ export const birthdays = [
     username: "wellwellwell",
     day: 28,
     month: 11,
+    favorite: false,
+    note: "your note",
   },
   {
     id: 39,
@@ -318,6 +394,8 @@ export const birthdays = [
     username: "wellwellwell",
     day: 28,
     month: 11,
+    favorite: false,
+    note: "your note",
   },
   {
     id: 40,
@@ -326,6 +404,8 @@ export const birthdays = [
     username: "wellwellwell",
     day: 28,
     month: 11,
+    favorite: false,
+    note: "your note",
   },
   {
     id: 41,
@@ -334,6 +414,8 @@ export const birthdays = [
     username: "wellwellwell",
     day: 28,
     month: 11,
+    favorite: false,
+    note: "your note",
   },
   {
     id: 42,
@@ -342,6 +424,8 @@ export const birthdays = [
     username: "wellwellwell",
     day: 28,
     month: 11,
+    favorite: false,
+    note: "your note",
   },
   {
     id: 43,
@@ -350,6 +434,8 @@ export const birthdays = [
     username: "wellwellwell",
     day: 28,
     month: 11,
+    favorite: false,
+    note: "your note",
   },
   {
     id: 44,
@@ -358,6 +444,8 @@ export const birthdays = [
     username: "wellwellwell",
     day: 28,
     month: 11,
+    favorite: false,
+    note: "your note",
   },
   {
     id: 45,
@@ -366,6 +454,8 @@ export const birthdays = [
     username: "wellwellwell",
     day: 28,
     month: 11,
+    favorite: false,
+    note: "your note",
   },
   {
     id: 46,
@@ -374,6 +464,8 @@ export const birthdays = [
     username: "wellwellwell",
     day: 28,
     month: 11,
+    favorite: false,
+    note: "your note",
   },
   {
     id: 47,
@@ -382,6 +474,8 @@ export const birthdays = [
     username: "wellwellwell",
     day: 28,
     month: 11,
+    favorite: false,
+    note: "your note",
   },
   {
     id: 48,
@@ -390,6 +484,8 @@ export const birthdays = [
     username: "wellwellwell",
     day: 28,
     month: 11,
+    favorite: false,
+    note: "your note",
   },
   {
     id: 49,
@@ -398,5 +494,7 @@ export const birthdays = [
     username: "wellwellwell",
     day: 28,
     month: 11,
+    favorite: false,
+    note: "your note",
   },
 ];

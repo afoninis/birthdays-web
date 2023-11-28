@@ -1,10 +1,21 @@
 .upcoming-birthday {
   grid-area: upcoming-birthday;
-  height: 35%;
+  height: 30vh;
+}
+.upcoming-birthday-list {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  overflow: hidden;
+}
+.upcoming-birthday-item {
+  width: 100%;
+  height: 100%;
   padding: 5rem 0 5rem 5rem;
   border-radius: var(--border-radius);
   background: url("../Assets/Images/upcoming-bg.svg") right no-repeat,
-    linear-gradient(101deg, #f9abe1 46.87%, #f8d5b7 100.42%);
+    var(--color-birthday-list-bg);
   background-size: contain;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -12,13 +23,73 @@
   grid-template-areas:
     "tag tag"
     "content date";
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all ease-in-out 0.5s;
+  opacity: 0;
+}
+.upcoming-birthday-item.birthday-today {
+  background: url("../Assets/Images/upcoming-today-bg.svg") right no-repeat,
+    linear-gradient(
+      148deg,
+      rgba(177, 87, 185, 0.75) 8.05%,
+      rgba(249, 171, 225, 0) 45%
+    ),
+    linear-gradient(101deg, #f9abe1 33.74%, #f8d5b7 100.42%);
+  background-size: contain;
+}
+.upcoming-birthday-item.birthday-today .upcoming-birthday-tag,
+.upcoming-birthday-item.birthday-today .upcoming-birthday-content--name,
+.upcoming-birthday-item.birthday-today .upcoming-birthday-content--days {
+  background: none;
+  background-clip: border-box;
+  -webkit-text-fill-color: currentColor;
+  color: var(--color-white);
+  -webkit-background-clip: border-box;
+}
+
+.upcoming-birthday-item.birthday-today .upcoming-birthday-tag {
+  color: var(--color-white);
+}
+.upcoming-birthday-item.birthday-today .upcoming-birthday-content--name {
+  background: none;
+  background-clip: border-box;
+  -webkit-background-clip: border-box;
+  -webkit-text-fill-color: currentColor;
+  color: var(--color-primary);
+}
+
+.upcoming-birthday-item.birthday-today .upcoming-birthday-content--days {
+  color: var(--color-upcoming-birthday--days);
+}
+.upcoming-birthday-item.birthday-today .upcoming-birthday-date {
+  color: var(--color-white);
+  background: var(--color-upcoming-birthday--date);
+}
+.upcoming-birthday-item.birthday-today .upcoming-birthday-dots-dot.nextSlide,
+.upcoming-birthday-item.birthday-today .upcoming-birthday-dots-dot.prevSlide {
+  color: var(--color-general-bg);
+}
+.upcoming-birthday-item.currentSlide {
+  transform: translateX(0);
+  opacity: 1;
+}
+.upcoming-birthday-item.nextSlide {
+  transform: translateX(100%);
+}
+.upcoming-birthday-item.prevSlide {
+  transform: translateX(-100%);
 }
 .upcoming-birthday-tag {
   grid-area: tag;
   text-transform: uppercase;
   font-family: "Helvetica_Lightoblique";
   letter-spacing: var(--letter-spacing);
-  color: var(--color-white);
+  background: linear-gradient(90deg, #f9abe1 0.15%, #f8d5b7 99.94%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .upcoming-birthday-content {
   grid-area: content;
@@ -32,9 +103,14 @@
 }
 .upcoming-birthday-content--days {
   font-size: 2rem;
-  color: none;
+  color: var(--color-upcoming-birthday--days);
+}
+.upcoming-birthday-content--name,
+.upcoming-birthday-content--days {
+  background: linear-gradient(101deg, #f9abe1 33.74%, #f8d5b7 100.42%);
+  background-clip: text;
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  -webkit-text-stroke: 1px var(--color-primary);
 }
 .upcoming-birthday-date {
   font-size: 2rem;
@@ -42,8 +118,62 @@
   grid-area: date;
   justify-self: end;
   align-self: end;
-  background-color: var(--color-upcoming-birthday--date);
-  color: var(--color-white);
-  padding: 1rem 2.5rem;
+  color: var(--color-upcoming-birthday--date);
+  background: linear-gradient(101deg, #f9abe1 33.74%, #f8d5b7 100.42%);
+  padding: 1.2rem 2.5rem;
   border-radius: var(--border-radius) 0 0 var(--border-radius);
+}
+.upcoming-birthday-arrows {
+  width: 100%;
+  padding: 0 2rem;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: space-between;
+  font-size: 2rem;
+}
+.upcoming-birthday-arrows-left {
+}
+.upcoming-birthday-arrows-right {
+}
+.upcoming-birthday-arrows-left,
+.upcoming-birthday-arrows-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 3.5rem;
+  height: 3.5rem;
+  background-color: var(--color-general-bg);
+  color: var(--color-white);
+  transition: all ease-in-out 0.3s;
+  cursor: pointer;
+}
+
+.upcoming-birthday-arrows-left:hover,
+.upcoming-birthday-arrows-right:hover {
+  background-color: var(--color-white);
+  color: var(--color-general-bg);
+  transform: scale(1.15);
+}
+.upcoming-birthday-dots {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 1.5rem;
+  font-size: 1.5rem;
+}
+.upcoming-birthday-dots-dot {
+  margin: 0 0.2rem;
+  cursor: pointer;
+}
+.upcoming-birthday-dots-dot.currentSlide {
+  color: var(--color-white);
+}
+.upcoming-birthday-dots-dot.nextSlide,
+.upcoming-birthday-dots-dot.prevSlide {
+  color: var(--color-upcoming-birthday-dots);
 }

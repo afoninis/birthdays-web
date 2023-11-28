@@ -20,7 +20,7 @@ function App() {
 
         return {
           ...targetItem,
-          days_till: Math.round(
+          days_till: Math.ceil(
             (targetDateInMS - currentDateInMS) / 1000 / 60 / 60 / 24
           ),
         };
@@ -36,14 +36,7 @@ function App() {
     <div className="App">
       <div className="container">
         <UpcomingBirthday data={data} />
-        <BirthdaysList data={data} />
-        <button
-          onClick={() => {
-            console.log(data[1]);
-          }}
-        >
-          tatarin
-        </button>
+        <BirthdaysList data={data} setData={setData} />
       </div>
     </div>
   );

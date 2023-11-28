@@ -1,3 +1,3 @@
-# <a href="https://afoninis.github.io/birthdays-web/">Click to watch</a><br />
+# <a href="https://afoninis.github.io/birthdays-web/">Click to Watch</a><br />
 
-<span>Designed by <a href="https://github.com/empt1nesss">empt1nesss</a></span>
+<span>Designed by <a href="https://github.com/empt1nesss">empt1nesss</a></span><br />

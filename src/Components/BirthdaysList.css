@@ -26,16 +26,118 @@
   display: flex;
 }
 .birthdays-list-header--controls-icon {
+  position: relative;
   width: 5rem;
   height: 6rem;
   display: grid;
   justify-items: center;
   align-items: center;
 }
+.birthdays-list-header--sort {
+  position: absolute;
+  display: none;
+  width: 20vw;
+  right: 0;
+  top: 0;
+  z-index: 3;
+  font-size: 1.8rem;
+  background-color: var(--color-birthday-sort-bg);
+  border-radius: var(--border-radius);
+}
+.birthdays-list-header--sort.checked {
+  display: block;
+}
+.birthdays-list-header--sort > * {
+  padding: 1.5rem;
+}
+.birthdays-list-header--sort-heading {
+  color: var(--color-birthday-list--primary);
+  height: 6vh;
+  display: flex;
+  align-items: center;
+  font-family: "Helvetica_LightOblique";
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  font-size: 1.8rem;
+}
+.birthdays-list-header--sort-content {
+  background-color: var(--color-birthday-sort-content);
+  border-radius: 0 0 var(--border-radius) var(--border-radius);
+}
+.birthdays-list-header--sort-item {
+  padding: 0.5rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: var(--border-radius);
+}
+.birthdays-list-header--sort-item.selected {
+  background-color: var(--color-birthday-sort-item);
+}
+.birthdays-list-header--sort-item:not(:last-child) {
+  margin-bottom: 1rem;
+}
+.birthdays-list-header--sort-title {
+  color: var(--color-birthday-sort-title);
+  font-family: "Gill_Sans";
+}
+.birthdays-list-header--sort-value {
+  font-family: "Helvetica_Regular";
+  letter-spacing: 1.5px;
+  color: var(--color-birthday-list--primary);
+  background-color: var(--color-birthday-sort-btn);
+  border-radius: var(--border-radius);
+  padding: 0.5rem 1rem;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+}
+.birthdays-list-header--sort-checkbox-wrapper {
+  display: flex;
+  align-items: center;
+  margin-top: 1.5rem;
+}
+.birthdays-list-header--sort-checkbox {
+  margin-right: 1rem;
+  border: 2px solid var(--color-birthday-sort-checkbox);
+  width: 1.8rem;
+  height: 1.8rem;
+  border-radius: 0.5rem;
+  background: none;
+}
+.birthdays-list-header--sort-checkbox.checked {
+  background-color: var(--color-birthday-sort-checkbox);
+}
+.birthdays-list-header--sort-checkbox-text {
+  color: var(--color-birthday-sort-checkbox);
+  font-family: "Helvetica_Light";
+  user-select: none;
+}
+
+.birthdays-list-content--additional-info {
+  position: absolute;
+  font-size: 1.2rem;
+  display: none;
+  padding: 0.8rem 1.6rem;
+  transform: translate(-85%, -60%);
+  z-index: 3;
+  background-color: var(--color-black);
+  color: var(--color-birthday-list--additional-info);
+  font-family: "Helvetica_Regular";
+  border-radius: var(--border-radius);
+  cursor: pointer;
+}
+.birthdays-list-content--additional-info.show {
+  display: block;
+}
 .birthdays-list-header--image {
   height: 4rem;
   transition: all ease-in-out 0.3s;
+  z-index: 3;
 }
+.menu-flip {
+  animation: menu-flipper 3s 1 ease-in-out;
+}
+
 .birthdays-list-header--image:hover {
   height: 5rem;
 }
@@ -60,9 +162,26 @@
 }
 .birthdays-list-content--person {
   color: var(--color-birthday-list--title);
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
 }
 .birthdays-list-content--name {
   font-family: "Helvetica_Bold";
+}
+.birthdays-list-content--star {
+  display: flex;
+  align-items: center;
+  margin-left: 0.7rem;
+}
+.birthdays-list-content--star img {
+  height: 2rem;
+}
+.birthdays-list-content--star-true {
+  opacity: 1;
+}
+.birthdays-list-content--star-false {
+  opacity: 0.2;
 }
 .birthdays-list-content--date {
   font-family: "Helvetica_Regular";
@@ -73,6 +192,7 @@
 .birthdays-list-content--image {
   height: 3rem;
   transition: all ease-in-out 0.3s;
+  cursor: pointer;
 }
 .birthdays-list-content--image:hover {
   height: 4rem;
@@ -87,6 +207,15 @@
   background-color: var(--color-birthday-list--right-progress);
   border-radius: var(--border-radius);
   border-left: 0.5rem solid var(--color-birthday-list-bg);
+}
+.birthdays-list-content--right.close {
+  background-color: var(--color-birthday-list--level-bg-close);
+}
+.birthdays-list-content--right.soon {
+  background-color: var(--color-birthday-list--level-bg-soon);
+}
+.birthdays-list-content--right.safe {
+  background-color: var(--color-birthday-list--level-bg-safe);
 }
 .birthdays-list-content--progress {
   position: absolute;
@@ -113,4 +242,12 @@
   z-index: 2;
   position: relative;
   color: var(--color-birthday-list--right-dark);
+}
+@keyframes menu-flipper {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }

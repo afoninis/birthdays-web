@@ -1,0 +1,116 @@
+.popup-info {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+  display: none;
+}
+.popup-info.show {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.popup-info-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000000aa;
+  backdrop-filter: blur(2px);
+}
+
+.popup-info-container {
+  position: relative;
+  background-color: var(--color-birthday-list-bg);
+  width: 30%;
+  font-size: 2rem;
+  padding: 5rem 4rem 3rem;
+  color: var(--color-birthday-list--primary);
+  border-radius: var(--border-radius);
+  font-family: "Gill_Sans";
+}
+.popup-info-close {
+  position: absolute;
+  right: 2rem;
+  top: 2rem;
+  cursor: pointer;
+  font-size: 2rem;
+  background-color: var(--color-upcoming-birthday--days);
+  color: var(--color-white);
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  transition: all ease-in-out 0.3s;
+}
+.popup-info-close:hover {
+  background-color: var(--color-white);
+  color: var(--color-primary);
+  transform: scale(1.15);
+}
+.popup-info-item {
+}
+.popup-info-item:not(:last-child) {
+  margin-bottom: 3rem;
+}
+.popup-info-item--title {
+  text-transform: uppercase;
+  color: var(--color-birthday-list--primary);
+  margin-bottom: 1rem;
+
+  font-family: "Helvetica_LightOblique";
+  letter-spacing: var(--letter-spacing);
+}
+.popup-info-item--name {
+  background-color: var(--color-birthday-list-item-bg);
+  border-radius: var(--border-radius);
+  padding: 1rem 2rem;
+}
+.popup-info-item--date {
+  font-size: 3rem;
+}
+.popup-info-item--date-bg {
+  background-color: var(--color-birthday-list-item-bg);
+  border-radius: var(--border-radius);
+  padding: 1rem 1.2rem;
+  font-size: 2rem;
+}
+.popup-info-item--date-bg:not(:last-child) {
+  margin-right: 0.5rem;
+}
+.popup-info-item--date-bg:not(:first-child) {
+  margin-left: 0.5rem;
+}
+.popup-info-item--checkbox-wrapper {
+  display: flex;
+  align-items: center;
+}
+.popup-info-item--checkbox {
+  margin-right: 0.5rem;
+  border: 2px solid var(--color-birthday-list--checkbox);
+  width: 1.8rem;
+  height: 1.8rem;
+  border-radius: 0.5rem;
+  background: none;
+}
+.popup-info-item--checkbox.checked {
+  background-color: var(--color-birthday-list--checkbox);
+}
+.popup-info-item--checkbox-text {
+  color: var(--color-birthday-list--checkbox);
+  user-select: none;
+}
+.popup-info-item--note {
+  background-color: var(--color-birthday-list-item-bg);
+  width: 100%;
+  height: 10vh;
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  resize: none;
+  border-radius: var(--border-radius);
+  padding: 0.5rem;
+}
