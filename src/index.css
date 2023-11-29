@@ -103,3 +103,24 @@ textarea {
   outline: none;
   border: none;
 }
+
+@media screen and (max-width: 100rem) {
+  html {
+    font-size: 56.25%;
+  }
+}
+@media screen and (max-width: 80rem) {
+  html {
+    font-size: 50%;
+  }
+}
+@media screen and (max-width: 50rem) {
+  html {
+    font-size: 43.75%;
+  }
+}
+@media screen and (max-width: 40rem) {
+  html {
+    font-size: 37.5%;
+  }
+}

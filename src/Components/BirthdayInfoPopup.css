@@ -114,3 +114,18 @@
   border-radius: var(--border-radius);
   padding: 0.5rem;
 }
+@media screen and (max-width: 100rem) {
+  .popup-info-container {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 80rem) {
+  .popup-info-container {
+    width: 65%;
+  }
+}
+@media screen and (max-width: 50rem) {
+  .popup-info-container {
+    width: 85%;
+  }
+}

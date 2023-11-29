@@ -9,3 +9,13 @@
   margin: 0 auto;
   padding-top: 2%;
 }
+@media screen and (max-width: 100rem) {
+  .container {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 70rem) {
+  .container {
+    width: 96%;
+  }
+}

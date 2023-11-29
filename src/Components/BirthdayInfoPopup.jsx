@@ -1,4 +1,3 @@
-import { useEffect, useReducer, useState } from "react";
 import "./BirthdayInfoPopup.css";
 import { getTargetYear } from "./Helpers";
 

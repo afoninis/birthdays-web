@@ -4,9 +4,8 @@ import editIcon from "../Assets/Images/edit.svg";
 import detailsIcon from "../Assets/Images/details.svg";
 import starEmpty from "../Assets/Images/star-empty.svg";
 import starFilled from "../Assets/Images/star-filled.svg";
-import { useCallback, useEffect, useState } from "react";
-import { birthdays } from "../test_data";
 import BirthdayInfoPopup from "./BirthdayInfoPopup";
+import { useState } from "react";
 
 const BirthdaysList = ({ data, setData }) => {
   const [popupInfoIndex, setPopupInfoIndex] = useState(0);
@@ -73,7 +72,8 @@ const BirthdaysList = ({ data, setData }) => {
               ...item,
               currentChoice: item?.filters?.[0],
             };
-        } else return item;
+        }
+        return item;
       });
     });
   };
@@ -196,7 +196,6 @@ const BirthdaysList = ({ data, setData }) => {
                 <div className="birthdays-list-content--person">
                   <h4 className="birthdays-list-content--name">
                     {item?.["name"]} {item?.["surname"]}{" "}
-                    {item?.["username"] && `(${item?.["username"]})`}
                   </h4>
                   <div
                     className="birthdays-list-content--star"

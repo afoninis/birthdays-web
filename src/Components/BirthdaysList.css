@@ -251,3 +251,24 @@
     transform: rotate(360deg);
   }
 }
+
+@media screen and (max-width: 100rem) {
+  .birthdays-list-header--sort {
+    width: 30vw;
+  }
+}
+@media screen and (max-width: 80rem) {
+  .birthdays-list-header--sort {
+    width: 40vw;
+  }
+}
+@media screen and (max-width: 50rem) {
+  .birthdays-list-header--sort {
+    width: 50vw;
+  }
+}
+@media screen and (max-width: 35rem) {
+  .birthdays-list-header--sort {
+    width: 60vw;
+  }
+}
