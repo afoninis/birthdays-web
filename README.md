@@ -20,7 +20,7 @@ npm install
 <h3>3. Run the project</h3>
 
 ```
-npm run
+npm start
 ```
 
 <h3>You can also build the project for insertion on the hosting (build folder)</h3>
