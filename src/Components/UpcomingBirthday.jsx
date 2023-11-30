@@ -3,9 +3,11 @@ import { getTargetYear } from "./Helpers";
 import { useState } from "react";
 
 const UpcomingBirthday = ({ data }) => {
-  const [currentSlide, setCurrentSlide] = useState(2);
-  const filteredData = data.filter((item) => item.days_till < 7);
-  const currentDate = new Date();
+  const [currentSlide, setCurrentSlide] = useState(0);
+  let filteredData = [];
+  for (let i = 0; i < (data.length > 5 ? 5 : data.length); i++) {
+    filteredData.push(data[i]);
+  }
 
   const getSlidePosition = (index) => {
     let slidePosition = "nextSlide";

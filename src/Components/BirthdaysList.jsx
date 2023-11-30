@@ -5,9 +5,16 @@ import detailsIcon from "../Assets/Images/details.svg";
 import starEmpty from "../Assets/Images/star-empty.svg";
 import starFilled from "../Assets/Images/star-filled.svg";
 import BirthdayInfoPopup from "./BirthdayInfoPopup";
-import { useState } from "react";
+import React, { useEffect, useState } from "react";
+import {
+  sortByDateDecrease,
+  sortByDateIncrease,
+  sortByImportantFirst,
+  sortByImportantOnly,
+  sortByName,
+} from "./Helpers";
 
-const BirthdaysList = ({ data, setData }) => {
+const BirthdaysList = React.memo(({ data, setData, updateData }) => {
   const [popupInfoIndex, setPopupInfoIndex] = useState(0);
   const [showPopupInfo, setShowPopupInfo] = useState(0);
   const [isBirthdayPopupVisible, setIsBirthdayPopupVisible] = useState(false);
@@ -18,7 +25,7 @@ const BirthdaysList = ({ data, setData }) => {
       id: 0,
       title: "By date",
       filters: ["Increase", "Decrease"],
-      currentChoice: "Decrease",
+      currentChoice: "Increase",
       isSelected: true,
     },
     {
@@ -30,7 +37,14 @@ const BirthdaysList = ({ data, setData }) => {
     },
   ]);
   const [isMenuAnimated, setIsMenuAnimated] = useState(0);
-  const [isImportantFirstChecked, setIsImportantFirstChecked] = useState(1);
+  const [isImportantOnlyChecked, setIsImportantOnlyChecked] = useState(0);
+  const [isImportantFirstChecked, setIsImportantFirstChecked] = useState(0);
+
+  const [currentSortFilter, setCurrentSortFilter] = useState(
+    sortingFilters?.[0]?.currentChoice
+  );
+  const [dataBeforeFiltered, setDataBeforeFiltered] = useState(0);
+  const [filterBeforeSwitch, setFilterBeforeSwitch] = useState(0);
 
   const setFavorite = (index) => {
     setData((data) => {
@@ -56,22 +70,31 @@ const BirthdaysList = ({ data, setData }) => {
   };
 
   const changeFilterCurrentChoice = (targetItem) => {
+    if (isImportantFirstChecked) return;
     return setSortingFilters((sortingFilters) => {
       return sortingFilters.map((item) => {
         if (targetItem === item) {
           const currentChoiceIndex = item?.filters?.findIndex(
             (el) => el === item.currentChoice
           );
-          if (currentChoiceIndex + 1 < item?.filters?.length)
-            return {
+          let resultSortFilter = "";
+          let resultItem;
+          if (currentChoiceIndex + 1 < item?.filters?.length) {
+            resultSortFilter = item?.filters?.[currentChoiceIndex + 1];
+            resultItem = {
               ...item,
               currentChoice: item?.filters?.[currentChoiceIndex + 1],
             };
-          else if (currentChoiceIndex === item?.filters?.length - 1)
-            return {
+          } else if (currentChoiceIndex === item?.filters?.length - 1) {
+            resultSortFilter = item?.filters?.[0];
+            resultItem = {
               ...item,
               currentChoice: item?.filters?.[0],
             };
+          }
+          if (!targetItem.isSelected) return resultItem;
+          setCurrentSortFilter(resultSortFilter);
+          return resultItem;
         }
         return item;
       });
@@ -81,10 +104,13 @@ const BirthdaysList = ({ data, setData }) => {
   const changeSelectedFilter = (targetItem, e) => {
     if (e.target.classList.contains("birthdays-list-header--sort-value"))
       return;
-    return setSortingFilters((sortingFilters) => {
+    if (isImportantFirstChecked) return;
+    setSortingFilters((sortingFilters) => {
       return sortingFilters.map((item) => {
-        if (item === targetItem) return { ...item, isSelected: true };
-        else return { ...item, isSelected: false };
+        if (item === targetItem) {
+          setCurrentSortFilter(item.currentChoice);
+          return { ...item, isSelected: true };
+        } else return { ...item, isSelected: false };
       });
     });
   };
@@ -96,6 +122,63 @@ const BirthdaysList = ({ data, setData }) => {
       clearInterval(menuFlipInterval);
     }, 3000);
   };
+
+  const switchImportantOnly = () => {
+    if (isImportantFirstChecked) return;
+    setIsImportantOnlyChecked(
+      (isImportantOnlyChecked) => !isImportantOnlyChecked
+    );
+
+    if (isImportantOnlyChecked) {
+      setCurrentSortFilter(sortingFilters?.[0]?.currentChoice);
+      setData(dataBeforeFiltered);
+    } else {
+      setCurrentSortFilter("ImportantOnly");
+    }
+  };
+  const switchImportantFirst = () => {
+    if (isImportantOnlyChecked) return;
+    setIsImportantFirstChecked(
+      (isImportantFirstChecked) => !isImportantFirstChecked
+    );
+    if (isImportantFirstChecked) {
+      setCurrentSortFilter(sortingFilters?.[0]?.currentChoice);
+    } else {
+      setFilterBeforeSwitch(currentSortFilter);
+      setCurrentSortFilter("ImportantFirst");
+    }
+  };
+
+  useEffect(() => {
+    switch (currentSortFilter) {
+      case "Increase": {
+        sortByDateIncrease(data);
+        break;
+      }
+      case "Decrease": {
+        sortByDateDecrease(data);
+        break;
+      }
+      case "A-Z": {
+        sortByName(data);
+        break;
+      }
+      case "ImportantOnly": {
+        setDataBeforeFiltered(data);
+        setData((data) => sortByImportantOnly(data));
+        break;
+      }
+      case "ImportantFirst": {
+        setData((data) => sortByImportantFirst(data, filterBeforeSwitch));
+        break;
+      }
+      default: {
+        sortByDateIncrease(data);
+        break;
+      }
+    }
+    updateData();
+  }, [currentSortFilter, updateData]);
 
   return (
     <section className="birthdays-list">
@@ -136,21 +219,27 @@ const BirthdaysList = ({ data, setData }) => {
                     className={`birthdays-list-header--sort-checkbox ${
                       isImportantFirstChecked ? "checked" : ""
                     }`}
-                    onClick={() =>
-                      setIsImportantFirstChecked(
-                        (isImportantFirstChecked) => !isImportantFirstChecked
-                      )
-                    }
+                    onClick={() => switchImportantFirst()}
                   ></div>
                   <p
                     className="birthdays-list-header--sort-checkbox-text"
-                    onClick={() =>
-                      setIsImportantFirstChecked(
-                        (isImportantFirstChecked) => !isImportantFirstChecked
-                      )
-                    }
+                    onClick={() => switchImportantFirst()}
                   >
                     Important first
+                  </p>
+                </div>
+                <div className="birthdays-list-header--sort-checkbox-wrapper">
+                  <div
+                    className={`birthdays-list-header--sort-checkbox ${
+                      isImportantOnlyChecked ? "checked" : ""
+                    }`}
+                    onClick={() => switchImportantOnly()}
+                  ></div>
+                  <p
+                    className="birthdays-list-header--sort-checkbox-text"
+                    onClick={() => switchImportantOnly()}
+                  >
+                    Important only
                   </p>
                 </div>
               </div>
@@ -285,6 +374,6 @@ const BirthdaysList = ({ data, setData }) => {
       />
     </section>
   );
-};
+});
 
 export default BirthdaysList;

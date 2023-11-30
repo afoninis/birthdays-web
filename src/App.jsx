@@ -1,12 +1,20 @@
-import { useCallback, useEffect, useState } from "react";
+import React, { useCallback, useEffect, useState } from "react";
 import "./App.css";
 import BirthdaysList from "./Components/BirthdaysList";
 import UpcomingBirthday from "./Components/UpcomingBirthday";
 import { birthdays } from "./test_data";
-import { getTargetYear } from "./Components/Helpers";
+import { getTargetYear, sortByDateIncrease } from "./Components/Helpers";
 
 function App() {
   const [data, setData] = useState(birthdays);
+
+  const updateData = useCallback(() => {
+    return setData((data) =>
+      data.map((item, index) => {
+        return { ...item, id: index };
+      })
+    );
+  }, []);
 
   const recalculateDaysTill = useCallback(() => {
     setData((data) => {
@@ -30,13 +38,16 @@ function App() {
 
   useEffect(() => {
     recalculateDaysTill();
+    setData((data) => {
+      return sortByDateIncrease(data);
+    });
   }, [recalculateDaysTill]);
 
   return (
     <div className="App">
       <div className="container">
         <UpcomingBirthday data={data} />
-        <BirthdaysList data={data} setData={setData} />
+        <BirthdaysList data={data} setData={setData} updateData={updateData} />
       </div>
     </div>
   );

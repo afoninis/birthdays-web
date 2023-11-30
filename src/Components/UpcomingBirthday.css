@@ -210,6 +210,11 @@
   }
 }
 @media screen and (max-width: 35rem) {
+  .upcoming-birthday-dots-dot {
+    margin: 0 0.4rem;
+  }
+}
+@media screen and (max-width: 35rem) {
   .upcoming-birthday {
     height: 16vh;
   }
