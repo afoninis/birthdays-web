@@ -1,6 +1,5 @@
 export const birthdays = [
   {
-    id: 0,
     name: "Alex",
     surname: "White",
     day: 30,
@@ -9,7 +8,6 @@ export const birthdays = [
     note: "noob",
   },
   {
-    id: 1,
     name: "Emma",
     surname: "White",
     day: 1,
@@ -18,7 +16,6 @@ export const birthdays = [
     note: "your note",
   },
   {
-    id: 2,
     name: "Charlotte",
     surname: "White",
     day: 2,
@@ -27,7 +24,6 @@ export const birthdays = [
     note: "your note",
   },
   {
-    id: 3,
     name: "Amelia",
     surname: "White",
     day: 3,
@@ -36,7 +32,6 @@ export const birthdays = [
     note: "your note",
   },
   {
-    id: 4,
     name: "Sophia",
     surname: "White",
     day: 4,
@@ -45,7 +40,6 @@ export const birthdays = [
     note: "your note",
   },
   {
-    id: 5,
     name: "Isabella",
     surname: "White",
     day: 4,
@@ -54,7 +48,6 @@ export const birthdays = [
     note: "your note",
   },
   {
-    id: 6,
     name: "Ava",
     surname: "White",
     day: 5,
@@ -63,7 +56,6 @@ export const birthdays = [
     note: "your note",
   },
   {
-    id: 7,
     name: "Mia",
     surname: "White",
     day: 6,
@@ -72,7 +64,6 @@ export const birthdays = [
     note: "your note",
   },
   {
-    id: 8,
     name: "Evelyn",
     surname: "White",
     day: 7,
@@ -81,7 +72,6 @@ export const birthdays = [
     note: "your note",
   },
   {
-    id: 9,
     name: "Luna",
     surname: "White",
     day: 8,
@@ -90,7 +80,6 @@ export const birthdays = [
     note: "your note",
   },
   {
-    id: 10,
     name: "Harper",
     surname: "White",
     day: 9,
@@ -99,7 +88,6 @@ export const birthdays = [
     note: "your note",
   },
   {
-    id: 11,
     name: "Camila",
     surname: "White",
     day: 10,
@@ -108,7 +96,6 @@ export const birthdays = [
     note: "your note",
   },
   {
-    id: 12,
     name: "Sofia",
     surname: "White",
     day: 11,
@@ -117,7 +104,6 @@ export const birthdays = [
     note: "your note",
   },
   {
-    id: 13,
     name: "Scarlett",
     surname: "White",
     day: 12,
@@ -126,7 +112,6 @@ export const birthdays = [
     note: "your note",
   },
   {
-    id: 14,
     name: "Elizabeth",
     surname: "White",
     day: 13,
@@ -135,7 +120,6 @@ export const birthdays = [
     note: "your note",
   },
   {
-    id: 15,
     name: "Eleanor",
     surname: "White",
     day: 14,
@@ -144,7 +128,6 @@ export const birthdays = [
     note: "your note",
   },
   {
-    id: 16,
     name: "Emily",
     surname: "White",
     day: 15,
@@ -153,7 +136,6 @@ export const birthdays = [
     note: "your note",
   },
   {
-    id: 17,
     name: "Chloe",
     surname: "White",
     day: 16,
@@ -162,7 +144,6 @@ export const birthdays = [
     note: "your note",
   },
   {
-    id: 18,
     name: "Mila",
     surname: "White",
     day: 17,
@@ -171,7 +152,6 @@ export const birthdays = [
     note: "your note",
   },
   {
-    id: 19,
     name: "Violet",
     surname: "White",
     day: 18,
@@ -180,7 +160,6 @@ export const birthdays = [
     note: "your note",
   },
   {
-    id: 20,
     name: "Penelope",
     surname: "White",
     day: 19,
@@ -189,7 +168,6 @@ export const birthdays = [
     note: "your note",
   },
   {
-    id: 21,
     name: "Gianna",
     surname: "White",
     day: 20,
@@ -198,7 +176,6 @@ export const birthdays = [
     note: "your note",
   },
   {
-    id: 22,
     name: "Aria",
     surname: "White",
     day: 21,
@@ -207,7 +184,6 @@ export const birthdays = [
     note: "your note",
   },
   {
-    id: 23,
     name: "Abigail",
     surname: "White",
     day: 22,
@@ -216,7 +192,6 @@ export const birthdays = [
     note: "your note",
   },
   {
-    id: 24,
     name: "Ella",
     surname: "White",
     day: 23,
@@ -225,7 +200,6 @@ export const birthdays = [
     note: "your note",
   },
   {
-    id: 25,
     name: "Avery",
     surname: "White",
     day: 24,
@@ -234,7 +208,6 @@ export const birthdays = [
     note: "your note",
   },
   {
-    id: 26,
     name: "Hazel",
     surname: "White",
     day: 25,
@@ -243,7 +216,6 @@ export const birthdays = [
     note: "your note",
   },
   {
-    id: 27,
     name: "Nora",
     surname: "White",
     day: 26,
@@ -252,7 +224,6 @@ export const birthdays = [
     note: "your note",
   },
   {
-    id: 28,
     name: "Layla",
     surname: "White",
     day: 27,
@@ -261,7 +232,6 @@ export const birthdays = [
     note: "your note",
   },
   {
-    id: 29,
     name: "Lily",
     surname: "White",
     day: 28,
@@ -270,7 +240,6 @@ export const birthdays = [
     note: "your note",
   },
   {
-    id: 30,
     name: "Aurora",
     surname: "White",
     day: 29,
@@ -279,7 +248,6 @@ export const birthdays = [
     note: "your note",
   },
   {
-    id: 31,
     name: "Nova",
     surname: "White",
     day: 30,
@@ -288,7 +256,6 @@ export const birthdays = [
     note: "your note",
   },
   {
-    id: 32,
     name: "Ellie",
     surname: "White",
     day: 31,
@@ -297,7 +264,6 @@ export const birthdays = [
     note: "your note",
   },
   {
-    id: 33,
     name: "Madison",
     surname: "White",
     day: 1,
@@ -306,7 +272,6 @@ export const birthdays = [
     note: "your note",
   },
   {
-    id: 34,
     name: "Grace",
     surname: "White",
     day: 2,
@@ -315,7 +280,6 @@ export const birthdays = [
     note: "your note",
   },
   {
-    id: 35,
     name: "Isla",
     surname: "White",
     day: 3,
@@ -324,7 +288,6 @@ export const birthdays = [
     note: "your note",
   },
   {
-    id: 36,
     name: "Willow",
     surname: "White",
     day: 28,
@@ -333,7 +296,6 @@ export const birthdays = [
     note: "your note",
   },
   {
-    id: 37,
     name: "Zoe",
     surname: "White",
     day: 28,
@@ -342,7 +304,6 @@ export const birthdays = [
     note: "your note",
   },
   {
-    id: 38,
     name: "Riley",
     surname: "White",
     day: 28,
@@ -351,7 +312,6 @@ export const birthdays = [
     note: "your note",
   },
   {
-    id: 39,
     name: "Stella",
     surname: "White",
     day: 28,
@@ -360,7 +320,6 @@ export const birthdays = [
     note: "your note",
   },
   {
-    id: 40,
     name: "Eliana",
     surname: "White",
     day: 28,
@@ -369,7 +328,6 @@ export const birthdays = [
     note: "your note",
   },
   {
-    id: 41,
     name: "Ivy",
     surname: "White",
     day: 28,
@@ -378,7 +336,6 @@ export const birthdays = [
     note: "your note",
   },
   {
-    id: 42,
     name: "Victoria",
     surname: "White",
     day: 28,
@@ -387,7 +344,6 @@ export const birthdays = [
     note: "your note",
   },
   {
-    id: 43,
     name: "Emilia",
     surname: "White",
     day: 28,
@@ -396,7 +352,6 @@ export const birthdays = [
     note: "your note",
   },
   {
-    id: 44,
     name: "Zoey",
     surname: "White",
     day: 28,
@@ -405,7 +360,6 @@ export const birthdays = [
     note: "your note",
   },
   {
-    id: 45,
     name: "Naomi",
     surname: "White",
     day: 28,
@@ -414,7 +368,6 @@ export const birthdays = [
     note: "your note",
   },
   {
-    id: 46,
     name: "Hannah",
     surname: "White",
     day: 28,
@@ -423,7 +376,6 @@ export const birthdays = [
     note: "your note",
   },
   {
-    id: 47,
     name: "Lucy",
     surname: "White",
     day: 28,
@@ -432,7 +384,6 @@ export const birthdays = [
     note: "your note",
   },
   {
-    id: 48,
     name: "Elena",
     surname: "White",
     day: 28,
@@ -441,7 +392,6 @@ export const birthdays = [
     note: "your note",
   },
   {
-    id: 49,
     name: "Lillian",
     surname: "White",
     day: 28,

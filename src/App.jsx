@@ -2,8 +2,13 @@ import React, { useCallback, useEffect, useState } from "react";
 import "./App.css";
 import BirthdaysList from "./Components/BirthdaysList";
 import UpcomingBirthday from "./Components/UpcomingBirthday";
-import { birthdays } from "./test_data";
-import { getTargetYear, sortByDateIncrease } from "./Components/Helpers";
+// import { birthdays } from "./test_data";
+import { birthdays } from "./my_data";
+import {
+  convertStringMonthToNumber,
+  getTargetYear,
+  sortByDateIncrease,
+} from "./Components/Helpers";
 
 function App() {
   const [data, setData] = useState(birthdays);
@@ -18,7 +23,9 @@ function App() {
 
   const recalculateDaysTill = useCallback(() => {
     setData((data) => {
-      return data.map((targetItem) => {
+      return data.map((targetItem, index) => {
+        if (typeof targetItem.month === "string")
+          targetItem.month = convertStringMonthToNumber(targetItem.month);
         const currentDateInMS = new Date().getTime();
         const targetDateInMS = new Date(
           getTargetYear(targetItem.day, targetItem.month),
@@ -28,6 +35,7 @@ function App() {
 
         return {
           ...targetItem,
+          id: index,
           days_till: Math.ceil(
             (targetDateInMS - currentDateInMS) / 1000 / 60 / 60 / 24
           ),
