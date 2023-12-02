@@ -7,6 +7,7 @@ import starFilled from "../Assets/Images/star-filled.svg";
 import BirthdayInfoPopup from "./BirthdayInfoPopup";
 import React, { useEffect, useState } from "react";
 import {
+  getTargetYear,
   sortByDateDecrease,
   sortByDateIncrease,
   sortByImportantFirst,
