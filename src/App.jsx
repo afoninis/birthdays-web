@@ -42,7 +42,6 @@ function App() {
         };
       });
     });
-    console.log(1);
   }, []);
 
   useEffect(() => {
