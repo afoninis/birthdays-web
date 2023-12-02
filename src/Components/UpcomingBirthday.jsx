@@ -1,8 +1,8 @@
 import "./UpcomingBirthday.css";
 import { getTargetYear } from "./Helpers";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
-const UpcomingBirthday = ({ data }) => {
+const UpcomingBirthday = ({ data, updateData }) => {
   const [currentSlide, setCurrentSlide] = useState(0);
   let filteredData = [];
   for (let i = 0; i < (data.length > 5 ? 5 : data.length); i++) {
@@ -19,6 +19,10 @@ const UpcomingBirthday = ({ data }) => {
       return "prevSlide";
     return slidePosition;
   };
+
+  useEffect(() => {
+    updateData();
+  }, [updateData]);
 
   return (
     <section className="upcoming-birthday">
@@ -48,7 +52,7 @@ const UpcomingBirthday = ({ data }) => {
                 </h5>
               </div>
               <h6 className="upcoming-birthday-date">
-                {item?.["day"]}.{item?.["month"]}.
+                {item?.["day"]}.{item?.["month"] + 1}.
                 {getTargetYear(item?.["day"], item?.["month"])}
               </h6>
               <div className="upcoming-birthday-arrows">

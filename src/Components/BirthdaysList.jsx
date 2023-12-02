@@ -309,7 +309,7 @@ const BirthdaysList = React.memo(({ data, setData, updateData }) => {
                     )}
                   </div>
                   <h5 className="birthdays-list-content--date">
-                    {item?.["day"]}.{item?.["month"]}
+                    {item?.["day"]}.{item?.["month"] + 1}
                   </h5>
                 </div>
                 <div

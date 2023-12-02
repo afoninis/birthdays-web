@@ -2,8 +2,8 @@ import React, { useCallback, useEffect, useState } from "react";
 import "./App.css";
 import BirthdaysList from "./Components/BirthdaysList";
 import UpcomingBirthday from "./Components/UpcomingBirthday";
-import { birthdays } from "./test_data";
-// import { birthdays } from "./my_data";
+// import { birthdays } from "./test_data";
+import { birthdays } from "./my_data";
 import {
   convertStringMonthToNumber,
   getTargetYear,
@@ -51,12 +51,12 @@ function App() {
       return sortByDateIncrease(data);
     });
     updateData();
-  }, [recalculateDaysTill]);
+  }, [recalculateDaysTill, updateData]);
 
   return (
     <div className="App">
       <div className="container">
-        <UpcomingBirthday data={data} />
+        <UpcomingBirthday data={data} updateData={updateData} />
         <BirthdaysList data={data} setData={setData} updateData={updateData} />
       </div>
     </div>
