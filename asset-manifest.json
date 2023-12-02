@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/birthdays-web/static/css/main.5ad3c064.css",
-    "main.js": "/birthdays-web/static/js/main.15b70797.js",
+    "main.js": "/birthdays-web/static/js/main.ea67f8c6.js",
     "static/media/helvetica_oblique.otf": "/birthdays-web/static/media/helvetica_oblique.a1823bb006b6c436c523.otf",
     "static/media/helvetica_boldoblique.otf": "/birthdays-web/static/media/helvetica_boldoblique.082aabcca193fbd19bc4.otf",
     "static/media/helvetica_bold.otf": "/birthdays-web/static/media/helvetica_bold.899889c95eb3c6b47ce3.otf",
@@ -20,10 +20,10 @@
     "static/media/details.svg": "/birthdays-web/static/media/details.622e19bb5b32d9706e7a1fd4769bfb1d.svg",
     "static/media/menu.svg": "/birthdays-web/static/media/menu.cf92edca88ff6c1f2267fe724069a33f.svg",
     "main.5ad3c064.css.map": "/birthdays-web/static/css/main.5ad3c064.css.map",
-    "main.15b70797.js.map": "/birthdays-web/static/js/main.15b70797.js.map"
+    "main.ea67f8c6.js.map": "/birthdays-web/static/js/main.ea67f8c6.js.map"
   },
   "entrypoints": [
     "static/css/main.5ad3c064.css",
-    "static/js/main.15b70797.js"
+    "static/js/main.ea67f8c6.js"
   ]
 }
