@@ -1,6 +1,5 @@
 import "./BirthdaysList.css";
 import menuIcon from "../Assets/Images/menu.svg";
-import editIcon from "../Assets/Images/edit.svg";
 import detailsIcon from "../Assets/Images/details.svg";
 import starEmpty from "../Assets/Images/star-empty.svg";
 import starFilled from "../Assets/Images/star-filled.svg";
@@ -256,14 +255,6 @@ const BirthdaysList = React.memo(({ data, setData, updateData }) => {
                 setIsSortVisible((isSortVisible) => !isSortVisible);
                 playMenuAnimation();
               }}
-            />
-          </div>
-          <div className="birthdays-list-header--controls-icon">
-            <img
-              src={editIcon}
-              className="birthdays-list-header--image"
-              alt="Edit icon"
-              title="Edit"
             />
           </div>
         </div>
