@@ -2,8 +2,8 @@ import React, { useCallback, useEffect, useState } from "react";
 import "./App.css";
 import BirthdaysList from "./Components/BirthdaysList";
 import UpcomingBirthday from "./Components/UpcomingBirthday";
-// import { birthdays } from "./test_data";
-import { birthdays } from "./my_data";
+import { birthdays } from "./test_data";
+// import { birthdays } from "./my_data";
 import {
   convertStringMonthToNumber,
   getTargetYear,
