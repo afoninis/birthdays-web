@@ -49,6 +49,7 @@ function App() {
     setData((data) => {
       return sortByDateIncrease(data);
     });
+    updateData();
   }, [recalculateDaysTill]);
 
   return (
