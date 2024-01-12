@@ -165,8 +165,12 @@
 .birthdays-list-content--person {
   color: var(--color-birthday-list--title);
   display: grid;
-  grid-template-columns: auto 1fr;
+  grid-template-rows: 1fr 1fr;
   align-items: center;
+  justify-content: start;
+}
+.birthdays-list-content--info {
+  display: flex;
 }
 .birthdays-list-content--name {
   font-family: "Helvetica_Bold";
@@ -175,6 +179,7 @@
   display: flex;
   align-items: center;
   margin-left: 0.7rem;
+  align-self: flex-start;
 }
 .birthdays-list-content--star img {
   height: 2rem;
@@ -281,5 +286,8 @@
 @media screen and (max-width: 35rem) {
   .birthdays-list-header--sort {
     width: 60vw;
+  }
+  .birthdays-list-content--left {
+    padding: 0.5rem 0.5rem 0.5rem 2rem;
   }
 }

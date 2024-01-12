@@ -275,30 +275,34 @@ const BirthdaysList = React.memo(({ data, setData, updateData }) => {
             <div key={index} className="birthdays-list-content--item">
               <div className="birthdays-list-content--left">
                 <div className="birthdays-list-content--person">
-                  <h4 className="birthdays-list-content--name">
-                    {item?.["name"]} {item?.["surname"]}{" "}
-                  </h4>
-                  <div
-                    className="birthdays-list-content--star"
-                    onClick={() =>
-                      item?.["favorite"]
-                        ? unsetFavorite(index)
-                        : setFavorite(index)
-                    }
-                  >
-                    {item?.["favorite"] ? (
-                      <img
-                        src={starFilled}
-                        className="birthdays-list-content--star-true"
-                        alt="Favorite icon"
-                      />
-                    ) : (
-                      <img
-                        src={starEmpty}
-                        alt="Favorite icon"
-                        className="birthdays-list-content--star-false"
-                      />
-                    )}
+                  <div className="birthdays-list-content--info">
+                    <h4 className="birthdays-list-content--name">
+                      {item?.["surname"]
+                        ? `${item?.["name"]} ${item?.["surname"]} `
+                        : item?.["name"]}
+                    </h4>
+                    <div
+                      className="birthdays-list-content--star"
+                      onClick={() =>
+                        item?.["favorite"]
+                          ? unsetFavorite(index)
+                          : setFavorite(index)
+                      }
+                    >
+                      {item?.["favorite"] ? (
+                        <img
+                          src={starFilled}
+                          className="birthdays-list-content--star-true"
+                          alt="Favorite icon"
+                        />
+                      ) : (
+                        <img
+                          src={starEmpty}
+                          alt="Favorite icon"
+                          className="birthdays-list-content--star-false"
+                        />
+                      )}
+                    </div>
                   </div>
                   <h5 className="birthdays-list-content--date">
                     {item?.["day"]}.{item?.["month"] + 1}.
