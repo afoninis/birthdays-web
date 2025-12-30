@@ -1,30 +1,24 @@
-# <a href="https://afoninis.github.io/birthdays-web/">Click to Watch</a><br />
+# <a href="https://afoninis.github.io/birthdays-web/">Посмотреть</a><br />
 
 <span>Designed by <a href="https://github.com/empt1nesss">empt1nesss</a></span><br />
 
-To customize the data, please fill out the <a href="https://github.com/afoninis/birthdays-web/blob/main/src/test_data.jsx" style="background-color:gray;">test_data.jsx</a> file to enter your information. The data on the website will update (temporary measure)
+# Birthdays Web
 
-<h2>Startup process</h2>
-<h3>1. Clone the project to your computer (or download it from github)</h3>
+React-проект для хранения и отслеживания дней рождения
+Добавляешь людей, смотришь даты и ничего не пропускаешь
 
-```
+## Технологии
+React, JavaScript, HTML/CSS
+
+## Что умеет
+- Добавлять людей с именем и датой рождения  
+- Смотреть список всех добавленных  
+- Простая форма для ввода данных
+
+## Запуск
+```bash
 git clone https://github.com/afoninis/birthdays-web.git
-```
-
-<h3>2. Navigate to the site directory and run the following command</h3>
-
-```
 npm install
-```
-
-<h3>3. Run the project</h3>
-
-```
 npm start
 ```
-
-<h3>You can also build the project for insertion on the hosting (build folder)</h3>
-
-```
-npm run build
-```
+Откроется в браузере на http://localhost:3000/
