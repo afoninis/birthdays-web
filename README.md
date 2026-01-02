@@ -1,4 +1,4 @@
-# <a href="https://afoninis.github.io/birthdays-web/">Посмотреть</a><br />
+# <a href="https://steelaura.github.io/birthdays-web/">Посмотреть</a><br />
 
 <span>Designed by <a href="https://github.com/empt1nesss">empt1nesss</a></span><br />
 
