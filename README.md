@@ -3,7 +3,6 @@ Live demo: [GitHub Pages link](https://moonimori.github.io/birthdays-web/)<br />
 
 # Birthdays Web
 
-![Stars](https://img.shields.io/github/stars/moonimori/birthdays-web?style=for-the-badge&colorA=A7C7E7&colorB=4B8BBE&logo=github)  
 ![License](https://img.shields.io/github/license/moonimori/birthdays-web?style=for-the-badge&colorA=90CAF9&colorB=1976D2)
 
 A simple React application for storing and viewing birthdays of people you care about
