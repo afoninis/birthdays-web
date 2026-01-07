@@ -1,23 +1,46 @@
-# <a href="https://moonimori.github.io/birthdays-web/">Посмотреть</a><br />
+# <a href="https://moonimori.github.io/birthdays-web/">Click to view</a><br />
 
 <span>Designed by <a href="https://github.com/empt1nesss">empt1nesss</a></span><br />
 
 # Birthdays Web
 
-React-проект для хранения и отслеживания дней рождения
-Добавляешь людей, смотришь даты и ничего не пропускаешь
+A simple React application for storing and viewing birthdays of people you care about
 
-## Технологии
-React, JavaScript, HTML/CSS
+## Overview
+This project is a small React web app that lets you:
+- Add people with their birthday dates
+- View the full list of birthdays
+- Keep track of upcoming birthdays
 
-## Что умеет
-- Добавлять людей с именем и датой рождения  
-- Смотреть список всех добавленных  
+It’s designed for personal use and simple birthday tracking
 
-## Запуск
+## Features
+- Add and store birthdays
+- Display a list of saved entries
+- Simple, intuitive user interface
+
+## Tech Stack
+- React
+- JavaScript
+- HTML & CSS
+
+## How to run
+1. Clone the repository:
 ```bash
-git clone https://github.com/afoninis/birthdays-web.git
+git clone https://github.com/moonimori/birthdays-web.git
+```
+
+Move into the project directory:
+```bash
+cd birthdays-web
+```
+Install dependencies:
+```bash
 npm install
+```
+
+Start the development server:
+```bash
 npm start
 ```
-Откроется в браузере на http://localhost:3000/
+Open your browser at http://localhost:3000
