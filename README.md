@@ -1,9 +1,9 @@
-Live demo: [GitHub Pages link](https://moonimori.github.io/birthdays-web/)<br />
+Live demo: [GitHub Pages link](https://wishik.github.io/birthdays-web/)<br />
 <span>Designed by <a href="https://github.com/empt1nesss">empt1nesss</a></span><br />
 
 # Birthdays Web
 
-![License](https://img.shields.io/github/license/moonimori/birthdays-web?style=for-the-badge&colorA=90CAF9&colorB=1976D2)
+![License](https://img.shields.io/github/license/wishik/birthdays-web?style=for-the-badge&colorA=90CAF9&colorB=1976D2)
 
 A simple React application for storing and viewing birthdays of people you care about
 
@@ -17,7 +17,7 @@ A simple React application for storing and viewing birthdays of people you care 
 
 ![Options Menu](./public/screenshots/options_menu.png)
 
-Live demo: [GitHub Pages link](https://moonimori.github.io/birthdays-web/)
+Live demo: [GitHub Pages link](https://wishik.github.io/birthdays-web/)
 
 ## Overview
 
@@ -46,7 +46,7 @@ It’s designed for personal use and simple birthday tracking
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/moonimori/birthdays-web.git
+git clone https://github.com/wishik/birthdays-web.git
 ```
 
 Move into the project directory:
