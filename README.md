@@ -1,4 +1,4 @@
-Live demo: [GitHub Pages link](https://moonimori.github.io/just-cake/)<br />
+Live demo: [GitHub Pages link](https://moonimori.github.io/birthdays-web/)<br />
 <span>Designed by <a href="https://github.com/empt1nesss">empt1nesss</a></span><br />
 
 # Birthdays Web
@@ -18,7 +18,7 @@ A simple React application for storing and viewing birthdays of people you care 
 
 ![Options Menu](./public/screenshots/options_menu.png)
 
-Live demo: [GitHub Pages link](https://moonimori.github.io/just-cake/)
+Live demo: [GitHub Pages link](https://moonimori.github.io/birthdays-web/)
 
 ## Overview
 
